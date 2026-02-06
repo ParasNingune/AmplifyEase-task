@@ -4,7 +4,7 @@ import './styles/App.css'
 
 function App({ config = {} }) {
   const defaultConfig = {
-    apiUrl: 'http://localhost:5001',
+    apiUrl: 'https://amplifyease-task.onrender.com',
     primaryColor: '#667eea',
     position: 'bottom-right',
     title: 'Chat with us!',
