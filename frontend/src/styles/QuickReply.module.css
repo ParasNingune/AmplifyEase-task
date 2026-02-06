@@ -1,0 +1,25 @@
+.quickReply {
+  padding: 8px 16px;
+  border: 2px solid;
+  border-radius: 20px;
+  background: white;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  line-height: 1.4;
+}
+
+.quickReply:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.quickReply:active {
+  transform: translateY(0);
+}

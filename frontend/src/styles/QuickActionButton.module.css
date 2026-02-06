@@ -1,0 +1,59 @@
+.quickActionButton {
+  padding: 8px 16px;
+  border: 2px solid;
+  border-radius: 20px;
+  background: white;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  white-space: nowrap;
+  vertical-align: middle;
+  line-height: 1.4;
+}
+
+.quickActionButton:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.quickActionButton:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.quickActionButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.icon {
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.label {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+@media (max-width: 480px) {
+  .quickActionButton {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+  
+  .icon {
+    font-size: 13px;
+  }
+  
+  .label {
+    font-size: 12px;
+  }
+}
